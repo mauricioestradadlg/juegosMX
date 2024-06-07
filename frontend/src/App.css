@@ -10,6 +10,7 @@
   font-size: 2rem;
   margin-top: 20px;
   font-size: 15px;
+  margin-left: 0px;
 }
 
 
@@ -173,18 +174,15 @@ button{
     
     }
     
-  
-/* CARRITO */
-
-
-
-.parrafoCarrito{
-  font-size: 10px;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#empty{
-  font-size: 20px;
-}
+  /* CARRITO */
+    #carrito, #total{
+      font-size: 20px;
+      color: white;
+      text-shadow: 2px 5px 5px black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #total{
+    
+      font-size: 40px;
+    }

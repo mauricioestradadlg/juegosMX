@@ -4,11 +4,11 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 function Luchaxbox({ agregarAlCarrito }) {
     const productos = [
-        { id: '1', nombre: 'JUEGO DE LUCHA XBOX 1', precio: 999, imagen: '/imagenes/lucha.jpg' },
-        { id: '2', nombre: 'JUEGO DE LUCHA XBOX 2', precio: 1099, imagen: '/imagenes/streetFighter6.jpg' },
-        { id: '3', nombre: 'JUEGO DE LUCHA XBOX 3', precio: 1199, imagen: '/imagenes/undisputed.jpg' },
-        { id: '4', nombre: 'JUEGO DE LUCHA XBOX 4', precio: 1299, imagen: '/imagenes/injustice.jpg' },
-        { id: '5', nombre: 'JUEGO DE LUCHA XBOX 5', precio: 1399, imagen: '/imagenes/wwe2k23.jpg' },
+        { id: 'prod_QFHG5OGEd1ZiJw', nombre: 'JUEGO DE LUCHA XBOX 1', precio: 999, imagen: '/imagenes/lucha.jpg' },
+        { id: 'prod_QFHGrfAcJQCazn', nombre: 'JUEGO DE LUCHA XBOX 2', precio: 1099, imagen: '/imagenes/streetFighter6.jpg' },
+        { id: 'prod_QFHH96SOX6wc1m', nombre: 'JUEGO DE LUCHA XBOX 3', precio: 1199, imagen: '/imagenes/undisputed.jpg' },
+        { id: 'prod_QFHH8JyiyQu7ei', nombre: 'JUEGO DE LUCHA XBOX 4', precio: 1299, imagen: '/imagenes/injustice.jpg' },
+        { id: 'prod_QFHInAKtWiH6hg', nombre: 'JUEGO DE LUCHA XBOX 5', precio: 1399, imagen: '/imagenes/wwe2k23.jpg' },
     ];
 
     const navigate = useNavigate();

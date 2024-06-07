@@ -4,8 +4,8 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 function Carrerasxbox({ agregarAlCarrito }) {
     const productos = [
-        { id: '1', nombre: 'JUEGO DE CARRERAS XBOX 1', precio: 999, imagen: '/imagenes/forza.jpg' },
-        { id: '2', nombre: 'JUEGO DE CARRERAS XBOX 2', precio: 1099, imagen: '/imagenes/f124.jpg' },
+        { id: 'prod_QFH87KW0BSbIjF', nombre: 'JUEGO DE CARRERAS XBOX 1', precio: 999, imagen: '/imagenes/forza.jpg' },
+        { id: 'prod_QFH9kCHGtdeoXe', nombre: 'JUEGO DE CARRERAS XBOX 2', precio: 1099, imagen: '/imagenes/f124.jpg' },
        
     ];
 

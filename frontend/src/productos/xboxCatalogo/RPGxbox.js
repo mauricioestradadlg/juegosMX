@@ -4,11 +4,11 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 function RPGxbox({ agregarAlCarrito }) {
     const productos = [
-        { id: '1', nombre: 'JUEGO DE RPG XBOX 1', precio: 999, imagen: '/imagenes/rpg.jpg' },
-        { id: '2', nombre: 'JUEGO DE RPG XBOX 2', precio: 1099, imagen: '/imagenes/fallout4.jpg' },
-        { id: '3', nombre: 'JUEGO DE RPG XBOX 3', precio: 1199, imagen: '/imagenes/cyberpunk2077.jpg' },
-        { id: '4', nombre: 'JUEGO DE RPG XBOX 4', precio: 1299, imagen: '/imagenes/hogwartsLegacy.jpg' },
-        { id: '5', nombre: 'JUEGO DE RPG XBOX 5', precio: 1399, imagen: '/imagenes/fallout76.jpg' },
+        { id: 'prod_QFHKLDM9nVcRK2', nombre: 'JUEGO DE RPG XBOX 1', precio: 999, imagen: '/imagenes/rpg.jpg' },
+        { id: 'prod_QFHLnj21PrChN3', nombre: 'JUEGO DE RPG XBOX 2', precio: 1099, imagen: '/imagenes/fallout4.jpg' },
+        { id: 'prod_QFHM10biTaJFLV', nombre: 'JUEGO DE RPG XBOX 3', precio: 1199, imagen: '/imagenes/cyberpunk2077.jpg' },
+        { id: 'prod_QFHMEuf8cLx4VY', nombre: 'JUEGO DE RPG XBOX 4', precio: 1299, imagen: '/imagenes/hogwartsLegacy.jpg' },
+        { id: 'prod_QFHNYtewbnwPiG', nombre: 'JUEGO DE RPG XBOX 5', precio: 1399, imagen: '/imagenes/fallout76.jpg' },
     ];
 
     const navigate = useNavigate();

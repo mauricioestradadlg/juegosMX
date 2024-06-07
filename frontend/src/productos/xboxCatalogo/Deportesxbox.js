@@ -4,11 +4,11 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 function Deportesxbox({ agregarAlCarrito }) {
     const productos = [
-        { id: '1', nombre: 'JUEGO DE DEPORTES XBOX 1', precio: 999, imagen: '/imagenes/fc24.jpg' },
-        { id: '2', nombre: 'JUEGO DE DEPORTES XBOX 2', precio: 1099, imagen: '/imagenes/nba2k24.jpg' },
-        { id: '3', nombre: 'JUEGO DE DEPORTES XBOX 3', precio: 1199, imagen: '/imagenes/madden24.jpg' },
-        { id: '4', nombre: 'JUEGO DE DEPORTES XBOX 4', precio: 1299, imagen: '/imagenes/wwe2k23.jpg' },
-        { id: '5', nombre: 'JUEGO DE DEPORTES XBOX 5', precio: 1399, imagen: '/imagenes/ufc5.jpg' },
+        { id: 'prod_QFHBXYxQZTWRRA', nombre: 'JUEGO DE DEPORTES XBOX 1', precio: 999, imagen: '/imagenes/fc24.jpg' },
+        { id: 'prod_QFHCG9kUvY2yXT', nombre: 'JUEGO DE DEPORTES XBOX 2', precio: 1099, imagen: '/imagenes/nba2k24.jpg' },
+        { id: 'prod_QFHDmp2H2jJkSy', nombre: 'JUEGO DE DEPORTES XBOX 3', precio: 1199, imagen: '/imagenes/madden24.jpg' },
+        { id: 'prod_QFHD6ZT4d4St7x', nombre: 'JUEGO DE DEPORTES XBOX 4', precio: 1299, imagen: '/imagenes/wwe2k23.jpg' },
+        { id: 'prod_QFHExlLqSMeKtL', nombre: 'JUEGO DE DEPORTES XBOX 5', precio: 1399, imagen: '/imagenes/ufc5.jpg' },
     ];
 
     const navigate = useNavigate();
