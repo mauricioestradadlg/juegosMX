@@ -1,0 +1,18 @@
+
+
+
+-Crear aplicacion de React:
+
+comando: npx create-react-app {"nombre de app"}
+
+
+
+-Instalar funciones de React:
+
+*npm install react-router-dom
+*npm install react-bootstrap bootstrap
+
+
+-Crear servidor de Node JS:
+
+comando: npm i express
