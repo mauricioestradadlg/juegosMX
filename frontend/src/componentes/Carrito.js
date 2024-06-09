@@ -9,7 +9,7 @@ const Carrito = ({ productosEnCarrito, setProductosEnCarrito }) => {
     const [walletConfig, setWalletConfig] = useState(null);
 
     useEffect(() => {
-        axios.get('https://juegosmxbackend.onrender.com/wallet-config')
+        axios.get('https://juegosmxbackend-hpc4sipu9-mauricios-projects-345599dc.vercel.app/wallet-config')
             .then(response => {
                 setWalletConfig(response.data);
             })
@@ -26,7 +26,7 @@ const Carrito = ({ productosEnCarrito, setProductosEnCarrito }) => {
     const handleCheckout = async () => {
         const stripe = await stripePromise;
 
-        const response = await axios.post('https://juegosmxbackend.onrender.com/checkout-session', {
+        const response = await axios.post('https://juegosmxbackend-hpc4sipu9-mauricios-projects-345599dc.vercel.app/checkout-session', {
             productos: productosEnCarrito,
         });
 
