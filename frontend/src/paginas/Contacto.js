@@ -9,11 +9,15 @@ const textStyle = {
 };
 
 function Contacto() {
-  const [nombre, setNombre] = useState('');
-  const [correo, setCorreo] = useState('');
-  const [celular, setCelular] = useState('');
-  const [mensaje, setMensaje] = useState('');
-  const navigate = useNavigate();
+
+  const navigate = useNavigate(); // Declara navigate utilizando useNavigate
+
+  const [formulario, setFormulario] = useState({
+      nombre: '',
+      correo: '',
+      celular: '',
+      mensaje: ''
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
