@@ -1,5 +1,6 @@
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useState } from 'react';
+import axios from 'axios'; // Importa axios para hacer peticiones HTTP
 import { useNavigate } from 'react-router-dom';
 
 const textStyle = {
@@ -14,27 +15,26 @@ function Contacto() {
   const [mensaje, setMensaje] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      const response = await fetch('/contacto', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ nombre, correo, celular, mensaje }),
-      });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormulario({ ...formulario, [name]: value });
+};
 
-      if (response.ok) {
-        navigate('/formEnviado');
-      } else {
-        alert('Error al registrar el contacto');
-      }
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+        const response = await axios.post('https://juegosmxbackend.onrender.com/contacto', formulario);
+        console.log(response.data); // Imprime la respuesta del servidor en la consola
+        // Aquí puedes manejar la respuesta del servidor como desees (por ejemplo, mostrar un mensaje de éxito)
+        
+        // Redirigir al usuario al componente FormEnviado
+        navigate('/formEnviado'); // Cambia '/form-enviado' por la ruta de tu componente FormEnviado
     } catch (error) {
-      console.error('Error:', error);
-      alert('Error al registrar el contacto');
+        console.error('Error al enviar formulario:', error);
+        // Aquí puedes manejar el error, como mostrar un mensaje al usuario
     }
-  };
+};
+
 
   return (
     <main style={{ textAlign: 'left' }}>
