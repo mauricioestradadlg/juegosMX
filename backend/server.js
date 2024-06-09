@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: 'http://localhost:3001',
+  origin: 'https://juegosmxfrontend.onrender.com',
   credentials: true,
 }));
 
@@ -83,8 +83,8 @@ app.post('/checkout-session', async (req, res) => {
           payment_method_types: ['card'],
           line_items: lineItems,
           mode: 'payment',
-          success_url: 'http://localhost:3001/compraExitosa',
-          cancel_url: 'http://localhost:3001/carrito',
+          success_url: 'https://juegosmxfrontend.onrender.com/compraExitosa',
+          cancel_url: 'https://juegosmxfrontend.onrender.com/carrito',
       });
 
       const nombresProductos = productos.map(producto => producto.nombre).join(', ');
