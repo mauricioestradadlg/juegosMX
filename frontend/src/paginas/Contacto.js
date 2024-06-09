@@ -1,6 +1,5 @@
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useState } from 'react';
-import axios from 'axios'; // Importa axios para hacer peticiones HTTP
 import { useNavigate } from 'react-router-dom';
 
 const textStyle = {
@@ -9,36 +8,33 @@ const textStyle = {
 };
 
 function Contacto() {
+  const [nombre, setNombre] = useState('');
+  const [correo, setCorreo] = useState('');
+  const [celular, setCelular] = useState('');
+  const [mensaje, setMensaje] = useState('');
+  const navigate = useNavigate();
 
-  const navigate = useNavigate(); // Declara navigate utilizando useNavigate
-
-  const [formulario, setFormulario] = useState({
-      nombre: '',
-      correo: '',
-      celular: '',
-      mensaje: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormulario({ ...formulario, [name]: value });
-};
-
-const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     try {
-        const response = await axios.post('https://juegosmxbackend.onrender.com/contacto', formulario);
-        console.log(response.data); // Imprime la respuesta del servidor en la consola
-        // Aquí puedes manejar la respuesta del servidor como desees (por ejemplo, mostrar un mensaje de éxito)
-        
-        // Redirigir al usuario al componente FormEnviado
-        navigate('/formEnviado'); // Cambia '/form-enviado' por la ruta de tu componente FormEnviado
-    } catch (error) {
-        console.error('Error al enviar formulario:', error);
-        // Aquí puedes manejar el error, como mostrar un mensaje al usuario
-    }
-};
+      const response = await fetch('/contacto', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ nombre, correo, celular, mensaje }),
+      });
 
+      if (response.ok) {
+        navigate('/formEnviado');
+      } else {
+        alert('Error al registrar el contacto');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error al registrar el contacto');
+    }
+  };
 
   return (
     <main style={{ textAlign: 'left' }}>
@@ -89,4 +85,3 @@ const handleSubmit = async (e) => {
 }
 
 export default Contacto;
-
