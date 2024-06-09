@@ -4,11 +4,11 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 function RPGPC({ agregarAlCarrito }) {
     const productos = [
-        { id: '1', nombre: 'JUEGO DE RPG PC 1', precio: 999, imagen: '/imagenes/rpg.jpg' },
-        { id: '2', nombre: 'JUEGO DE RPG PC 2', precio: 1099, imagen: '/imagenes/fallout4.jpg' },
-        { id: '3', nombre: 'JUEGO DE RPG PC 3', precio: 1199, imagen: '/imagenes/cyberpunk2077.jpg' },
-        { id: '4', nombre: 'JUEGO DE RPG PC 4', precio: 1299, imagen: '/imagenes/hogwartsLegacy.jpg' },
-        { id: '5', nombre: 'JUEGO DE RPG PC 5', precio: 1399, imagen: '/imagenes/fallout76.jpg' },
+        { id: 'prod_QFjgCyWh80aKB7', nombre: 'JUEGO DE RPG PC 1', precio: 999, imagen: '/imagenes/rpg.jpg' },
+        { id: 'prod_QFjgzgbWljkJgb', nombre: 'JUEGO DE RPG PC 2', precio: 1099, imagen: '/imagenes/fallout4.jpg' },
+        { id: 'prod_QFjhLnfEmuyGqU', nombre: 'JUEGO DE RPG PC 3', precio: 1199, imagen: '/imagenes/cyberpunk2077.jpg' },
+        { id: 'prod_QFjhrGJ0EF0fiD', nombre: 'JUEGO DE RPG PC 4', precio: 1299, imagen: '/imagenes/hogwartsLegacy.jpg' },
+        { id: 'prod_QFjiJtYYq6gYT3', nombre: 'JUEGO DE RPG PC 5', precio: 1399, imagen: '/imagenes/fallout76.jpg' },
     ];
 
 

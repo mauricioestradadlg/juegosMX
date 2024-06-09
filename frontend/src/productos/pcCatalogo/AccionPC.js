@@ -4,11 +4,11 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 function AccionPC({ agregarAlCarrito }) {
     const productos = [
-        { id: '1', nombre: 'JUEGO DE ACCION PC 1', precio: 999, imagen: '/imagenes/ssktjl.jpg' },
-        { id: '2', nombre: 'JUEGO DE ACCION PC 2', precio: 1099, imagen: '/imagenes/gta5.jpg' },
-        { id: '3', nombre: 'JUEGO DE ACCION PC 3', precio: 1199, imagen: '/imagenes/rdr2.jpg' },
-        { id: '4', nombre: 'JUEGO DE ACCION PC 4', precio: 1299, imagen: '/imagenes/batmanAK.jpg' },
-        { id: '5', nombre: 'JUEGO DE ACCION PC 5', precio: 1399, imagen: '/imagenes/avengers.jpg' },
+        { id: 'prod_QFjLc7ROeZWhXj', nombre: 'JUEGO DE ACCION PC 1', precio: 999, imagen: '/imagenes/ssktjl.jpg' },
+        { id: 'prod_QFjM6rpsxKAfO8', nombre: 'JUEGO DE ACCION PC 2', precio: 1099, imagen: '/imagenes/gta5.jpg' },
+        { id: 'prod_QFjN6wQurYGZUU', nombre: 'JUEGO DE ACCION PC 3', precio: 1199, imagen: '/imagenes/rdr2.jpg' },
+        { id: 'prod_QFjOspKmzZ9hbc', nombre: 'JUEGO DE ACCION PC 4', precio: 1299, imagen: '/imagenes/batmanAK.jpg' },
+        { id: 'prod_QFjPaaLifmDHcR', nombre: 'JUEGO DE ACCION PC 5', precio: 1399, imagen: '/imagenes/avengers.jpg' },
     ];
 
     const navigate = useNavigate();

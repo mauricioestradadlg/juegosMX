@@ -4,11 +4,11 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 function FPSPC({ agregarAlCarrito }) {
     const productos = [
-        { id: '1', nombre: 'JUEGO DE FPS PC 1', precio: 999, imagen: '/imagenes/mw3.jpg' },
-        { id: '2', nombre: 'JUEGO DE FPS PC 2', precio: 1099, imagen: '/imagenes/mw2.jpg' },
-        { id: '3', nombre: 'JUEGO DE FPS PC 3', precio: 1199, imagen: '/imagenes/vanguard.jpg' },
-        { id: '4', nombre: 'JUEGO DE FPS PC 4', precio: 1299, imagen: '/imagenes/cw.jpg' },
-        { id: '5', nombre: 'JUEGO DE FPS PC 5', precio: 1399, imagen: '/imagenes/mw1.jpg' },
+        { id: 'prod_QFjHTLr6wfmbzB', nombre: 'JUEGO DE FPS PC 1', precio: 999, imagen: '/imagenes/mw3.jpg' },
+        { id: 'prod_QFjIt3hbFPVEqw', nombre: 'JUEGO DE FPS PC 2', precio: 1099, imagen: '/imagenes/mw2.jpg' },
+        { id: 'prod_QFjJOcnBteyfkx', nombre: 'JUEGO DE FPS PC 3', precio: 1199, imagen: '/imagenes/vanguard.jpg' },
+        { id: 'prod_QFjKmPoYP09jLy', nombre: 'JUEGO DE FPS PC 4', precio: 1299, imagen: '/imagenes/cw.jpg' },
+        { id: 'prod_QFjKrAYEZ3CVjZ', nombre: 'JUEGO DE FPS PC 5', precio: 1399, imagen: '/imagenes/mw1.jpg' },
     ];
 
 

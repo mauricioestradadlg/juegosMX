@@ -4,8 +4,8 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 function CarrerasPC({ agregarAlCarrito }) {
     const productos = [
-        { id: '1', nombre: 'JUEGO DE CARRERAS PC 1', precio: 999, imagen: '/imagenes/forza.jpg' },
-        { id: '2', nombre: 'JUEGO DE CARRERAS PC 2', precio: 1099, imagen: '/imagenes/f124.jpg' },
+        { id: 'prod_QFjQ4UMG7TuWkL', nombre: 'JUEGO DE CARRERAS PC 1', precio: 999, imagen: '/imagenes/forza.jpg' },
+        { id: 'prod_QFjRmXoOh4Sa5K', nombre: 'JUEGO DE CARRERAS PC 2', precio: 1099, imagen: '/imagenes/f124.jpg' },
        
     ];
 

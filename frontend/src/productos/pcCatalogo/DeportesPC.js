@@ -5,11 +5,11 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 function DeportesPC({ agregarAlCarrito }) {
     
     const productos = [
-        { id: '1', nombre: 'JUEGO DE DEPORTES PC 1', precio: 999, imagen: '/imagenes/fc24.jpg' },
-        { id: '2', nombre: 'JUEGO DE DEPORTES PC 2', precio: 1099, imagen: '/imagenes/nba2k24.jpg' },
-        { id: '3', nombre: 'JUEGO DE DEPORTES PC 3', precio: 1199, imagen: '/imagenes/madden24.jpg' },
-        { id: '4', nombre: 'JUEGO DE DEPORTES PC 4', precio: 1299, imagen: '/imagenes/wwe2k23.jpg' },
-        { id: '5', nombre: 'JUEGO DE DEPORTES PC 5', precio: 1399, imagen: '/imagenes/ufc5.jpg' },
+        { id: 'prod_QFjRmXoOh4Sa5K', nombre: 'JUEGO DE DEPORTES PC 1', precio: 999, imagen: '/imagenes/fc24.jpg' },
+        { id: 'prod_QFjXdZfyUY1Ud7', nombre: 'JUEGO DE DEPORTES PC 2', precio: 1099, imagen: '/imagenes/nba2k24.jpg' },
+        { id: 'prod_QFjYvrhZMxvSH7', nombre: 'JUEGO DE DEPORTES PC 3', precio: 1199, imagen: '/imagenes/madden24.jpg' },
+        { id: 'prod_QFjZfDmsEdm172', nombre: 'JUEGO DE DEPORTES PC 4', precio: 1299, imagen: '/imagenes/wwe2k23.jpg' },
+        { id: 'prod_QFjaVJ0QLCvICO', nombre: 'JUEGO DE DEPORTES PC 5', precio: 1399, imagen: '/imagenes/ufc5.jpg' },
     ];
 
     const navigate = useNavigate();
