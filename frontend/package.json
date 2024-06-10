@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "https://gamesmxbackend.onrender.com",
+  "proxy": "https://juegosmxbackend-git-version1-mauricios-projects-345599dc.vercel.app/?vercelToolbarCode=gR57xoN1BxddZdz",
   "private": true,
   "dependencies": {
     "@stripe/react-stripe-js": "^2.7.1",
