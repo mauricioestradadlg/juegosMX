@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: 'https://gamesmxfrontend.onrender.com',
+  origin: 'https://juegosmxfrontend-git-version1-mauricios-projects-345599dc.vercel.app',
   credentials: true,
 }));
 
@@ -83,8 +83,8 @@ app.post('/checkout-session', async (req, res) => {
           payment_method_types: ['card'],
           line_items: lineItems,
           mode: 'payment',
-          success_url: 'https://gamesmxfrontend.onrender.com/compraExitosa',
-          cancel_url: 'https://gamesmxfrontend.onrender.com/carrito',
+          success_url: 'https://juegosmxfrontend-git-version1-mauricios-projects-345599dc.vercel.app/compraExitosa',
+          cancel_url: 'https://juegosmxfrontend-git-version1-mauricios-projects-345599dc.vercel.app/carrito',
       });
 
       const nombresProductos = productos.map(producto => producto.nombre).join(', ');
