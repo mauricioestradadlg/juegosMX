@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './componentes/Header';
@@ -37,6 +37,9 @@ function App() {
     const agregarAlCarrito = (producto) => {
         setProductosEnCarrito([...productosEnCarrito, producto]);
     };
+
+    
+
 
     return (
         <Router>
