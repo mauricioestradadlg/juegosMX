@@ -64,6 +64,7 @@ app.get('/wallet-config', async (req, res) => {
 
 
 
+
 app.post('/checkout-session', async (req, res) => {
   try {
       const { productos } = req.body;
@@ -97,7 +98,7 @@ app.post('/checkout-session', async (req, res) => {
               res.status(500).json({ error: 'Error al guardar la compra en la base de datos' });
               return;
           }
-          console.log('Compra guardada correctamente en la base de datos');
+          console.log('Compra guardada correctamente en la base de datos', result);
       });
 
       res.json({ sessionId: session.id });
@@ -106,6 +107,8 @@ app.post('/checkout-session', async (req, res) => {
       res.status(500).json({ error: 'Error al crear el checkout session' });
   }
 });
+
+
 
 
 
