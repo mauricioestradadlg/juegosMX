@@ -13,7 +13,7 @@ function Navegation(){
             <Nav.Link className = 'navbarli' href="/">Inicio</Nav.Link>
             <Nav.Link className = 'navbarli' href="/aboutus">Sobre Nosotros</Nav.Link>
             <Nav.Link className = 'navbarli' href="/catalogo">Catalogo</Nav.Link>
-            <Nav.Link className = 'navbarli' href="/Contacto">Contacto</Nav.Link>
+            <Nav.Link className = 'navbarli' href="/contacto">Contacto</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
