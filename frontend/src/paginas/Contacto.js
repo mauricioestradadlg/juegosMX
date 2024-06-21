@@ -17,14 +17,15 @@ function Contacto() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('/contacto', {
+      console.log('Enviando datos al backend:', { nombre, correo, celular, mensaje });
+      const response = await fetch('https://juegosmxbackend.onrender.com/contacto', { // Asegúrate de usar la URL correcta del backend
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ nombre, correo, celular, mensaje }),
       });
-
+  
       if (response.ok) {
         navigate('/formEnviado');
       } else {
@@ -35,6 +36,7 @@ function Contacto() {
       alert('Error al registrar el contacto');
     }
   };
+  
 
   return (
     <main style={{ textAlign: 'left' }}>
@@ -85,3 +87,4 @@ function Contacto() {
 }
 
 export default Contacto;
+

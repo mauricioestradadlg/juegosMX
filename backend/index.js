@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: 'https://juegosmxfrontend.onrender.com',
+  origin: 'https://juegosmxfrontend.onrender.com', // URL de tu frontend
   credentials: true,
 }));
 
@@ -35,7 +35,10 @@ connection.connect((err) => {
   console.log('Connected to the database.');
 });
 
+
+
 app.post('/contacto', (req, res) => {
+  console.log('Datos recibidos en /contacto:', req.body);
   const { nombre, correo, celular, mensaje } = req.body;
   const query = 'INSERT INTO formulario (nombre, correo, celular, mensaje) VALUES (?, ?, ?, ?)';
   
@@ -45,9 +48,11 @@ app.post('/contacto', (req, res) => {
       res.status(500).send('Error al registrar el contacto');
       return;
     }
+    console.log('Contacto registrado con éxito');
     res.send('Contacto registrado con éxito');
   });
 });
+
 
 
 
