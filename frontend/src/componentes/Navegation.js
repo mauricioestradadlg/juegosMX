@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
+
 
 
 function Navegation(){
@@ -10,10 +12,10 @@ function Navegation(){
     <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Nav className="me-auto navbar">
-            <Nav.Link className = 'navbarli' href="/">Inicio</Nav.Link>
-            <Nav.Link className = 'navbarli' href="/aboutus">Sobre Nosotros</Nav.Link>
-            <Nav.Link className = 'navbarli' href="/catalogo">Catalogo</Nav.Link>
-            <Nav.Link className = 'navbarli' href="/contacto">Contacto</Nav.Link>
+          <Link className = 'navbarli' to = "/">Inicio</Link>
+          <Link className = 'navbarli' to = "/aboutus">Sobre Nosotros</Link>
+          <Link className = 'navbarli' to = "/catalogo">Catalogo</Link>
+          <Link className = 'navbarli' to = "/contacto">Contacto</Link>
           </Nav>
         </Container>
       </Navbar>
