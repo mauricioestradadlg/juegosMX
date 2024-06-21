@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import axios from 'axios';
 import { Button, Row, Col } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const stripePromise = loadStripe('pk_test_51POmBWFJbxdvSPqZWilfGrTAZGd3L4ARULC8qgTwbgSlu4iVzS6r4S7iiR5z7UDQF662KFUlZAh1JHX3nP2LslhF003HEh0JOJ');
 
 const Carrito = ({ productosEnCarrito, setProductosEnCarrito }) => {
     const [walletConfig, setWalletConfig] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         axios.get('https://juegosmxbackend.onrender.com/wallet-config')
@@ -37,6 +39,8 @@ const Carrito = ({ productosEnCarrito, setProductosEnCarrito }) => {
         if (result.error) {
             console.error('Error al iniciar el checkout:', result.error);
             alert('Error al iniciar el checkout');
+        } else {
+            navigate('/compraExitosa');
         }
     };
 

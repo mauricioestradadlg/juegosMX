@@ -63,9 +63,9 @@ app.get('/wallet-config', async (req, res) => {
 });
 
 
+
 app.post('/checkout-session', async (req, res) => {
   try {
-      console.log('Solicitud POST recibida en /checkout-session');
       const { productos } = req.body;
 
       const lineItems = productos.map((producto) => ({
@@ -106,6 +106,7 @@ app.post('/checkout-session', async (req, res) => {
       res.status(500).json({ error: 'Error al crear el checkout session' });
   }
 });
+
 
 
 
