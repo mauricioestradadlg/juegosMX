@@ -39,7 +39,8 @@ const Carrito = ({ productosEnCarrito, setProductosEnCarrito }) => {
         if (result.error) {
             console.error('Error al iniciar el checkout:', result.error);
             alert('Error al iniciar el checkout');
-        } else {
+        } 
+        else {
             navigate('/compraExitosa');
         }
     };
