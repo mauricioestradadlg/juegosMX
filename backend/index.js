@@ -83,8 +83,8 @@ app.post('/checkout-session', async (req, res) => {
           payment_method_types: ['card'],
           line_items: lineItems,
           mode: 'payment',
-          //success_url: 'https://juegosmxfrontend.onrender.com/compraExitosa',
-          //cancel_url: 'https://juegosmxfrontend.onrender.com/carrito',
+          success_url: 'https://juegosmxfrontend.onrender.com/',
+          cancel_url: 'https://juegosmxfrontend.onrender.com/',
       });
 
       const nombresProductos = productos.map(producto => producto.nombre).join(', ');
