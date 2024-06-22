@@ -20,7 +20,7 @@ function Inicio() {
           </Col>
         </Row>
 
-        <h4 className="text-center mt-4" style={textStyle}>REVISA NUESTRO CATALOGO DE PC GAMERS!</h4><br/><br/>
+        <h4 className="text-center mt-4" style={textStyle}>REVISA NUESTRO CATALOGO DE VIDEOJUEGOS!</h4><br/><br/>
         <Row>
           <Col md={12}>
             <img className="imagenInicio img-fluid" src="./imagenes/watchdogs.jpg" alt="Watch Dogs" />
