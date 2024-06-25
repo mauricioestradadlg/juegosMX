@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const stripe = require('stripe')('sk_test_51POmBWFJbxdvSPqZSSQNcPiO3gkLftDPfwPyFnLmdHLAAEDcY3UQ4l0QEkV3cuoYEvyGzNF7luLOUmBBpc2bCJqv00YhoG4yKq');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 dotenv.config();
 
